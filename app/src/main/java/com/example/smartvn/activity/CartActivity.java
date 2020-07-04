@@ -54,7 +54,7 @@ public class CartActivity extends AppCompatActivity implements RecyclerItemTouch
          //   totalPrice += Integer.valueOf(Pattern.compile("(\\,|\\VNĐ|\\s+)").matcher(MainActivity.listCart.get(i).getProductTotalPrice()).replaceAll("")); // replace "," "VND" thanh khaong trang
         }
         DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
-        resultPrice =(decimalFormat.format(totalPrice) + " VNĐ");
+        resultPrice =(decimalFormat.format(totalPrice) + " VND");
         return "Total: " +resultPrice;
     }
     private void setViewAndValue() {
