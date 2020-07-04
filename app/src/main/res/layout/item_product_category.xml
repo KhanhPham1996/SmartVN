@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imgview_catagory"
+        android:src="@drawable/ic_menu_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:textColor="#000000"
+    android:id="@+id/textview_catagoryname"
+    android:layout_marginLeft="10dp"
+    android:gravity="center_vertical"
+    android:text="ProductCateName"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"/>
+</LinearLayout>

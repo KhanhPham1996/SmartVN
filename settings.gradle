@@ -1,0 +1,2 @@
+rootProject.name='SmartVN'
+include ':app'
