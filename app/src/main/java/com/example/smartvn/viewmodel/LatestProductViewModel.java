@@ -13,6 +13,7 @@ public class LatestProductViewModel extends ViewModel {
     private MutableLiveData<List<Product>> mutableLiveData;
     private ProductRepository newsRepository;
 
+
     public void init(){
         if (mutableLiveData != null){
             return;
@@ -24,6 +25,14 @@ public class LatestProductViewModel extends ViewModel {
 
     public LiveData<List<Product>> getLatestProductRepository() {
         return mutableLiveData;
+    }
+    public String arrangeCoins(int n) {
+        int num1 = 0;
+        int num2 = 1;
+        for (int i = 2;i<10 ; i ++){
+
+        }
+        return "h";
     }
 
 }

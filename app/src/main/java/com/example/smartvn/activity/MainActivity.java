@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getDataFromServer() {
-        latestProductViewModel = new ViewModelProvider(this).get(LatestProductViewModel.class);
+        latestProductViewModel    = new ViewModelProvider(this).get(LatestProductViewModel.class);
         binding.shimmerViewContainer.startShimmerAnimation();
         binding.mainRecycerview.setAlpha(0f);
         binding.mainRecycerview.setVisibility(View.VISIBLE);
