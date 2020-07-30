@@ -30,7 +30,7 @@ import com.google.gson.Gson;
 import java.text.DecimalFormat;
 import java.util.regex.Pattern;
 
-public class CartActivity extends AppCompatActivity implements RecyclerItemTouchHelper.RecyclerItemTouchHelperListener {
+public class CartActivity extends AppCompatActivity implements RecyclerItemTouchHelper.RecyclerItemTouchHelperListener, View.OnClickListener  {
 
 
     private CartAdapter cartAdapter;
@@ -107,6 +107,12 @@ public class CartActivity extends AppCompatActivity implements RecyclerItemTouch
                 new RecyclerItemTouchHelper(0, ItemTouchHelper.LEFT, this);
         new ItemTouchHelper(itemTouchHelperCallback).attachToRecyclerView(binding.recyclerCart);
     }
+
+    @Override
+    public void onClick(View v) {
+
+    }
+
     public class MyClickHandlers {
         Context context;
 

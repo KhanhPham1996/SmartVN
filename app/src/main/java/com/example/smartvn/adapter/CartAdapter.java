@@ -21,6 +21,8 @@ import com.example.smartvn.ultil.ItemClickListener;
 
 import java.util.List;
 
+
+// Comment for new branche
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder> {
     private Context context;
     private List<Cart> lstCart;
