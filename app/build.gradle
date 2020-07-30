@@ -8,7 +8,7 @@ android {
     }
     defaultConfig {
         applicationId "com.example.smartvn"
-        minSdkVersion 19
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -58,15 +58,34 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:$appcompat_version"
     implementation 'com.squareup.retrofit2:retrofit:2.1.0'
 
-// JSON Parsing
+    // JSON Parsing
     implementation 'com.google.code.gson:gson:2.6.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
-// Shimmer facebook
+    // Shimmer facebook
     implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
-// Facebook API
+    // Facebook API
     implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
-
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+
+    testImplementation 'junit:junit:4.12'
+
+    // Espresso
+    def androidx_test_espresso = "3.2.0"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$androidx_test_espresso"
+    implementation "androidx.test.espresso:espresso-idling-resource:$androidx_test_espresso"
+
+    // Mockk.io
+    def mockk_version = "1.9.3"
+    androidTestImplementation "io.mockk:mockk-android:$mockk_version"
+
+    // androidx.test
+    def androidx_test = "1.1.0"
+    androidTestImplementation "androidx.test:runner:$androidx_test"
+    androidTestImplementation "androidx.test:core:$androidx_test"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_test"
 }

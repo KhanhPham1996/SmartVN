@@ -7,7 +7,7 @@
     <item
         android:id="@+id/nav_mobile"
         android:icon="@drawable/ic_phone"
-        android:title="Smart Phone" />
+        android:title="@string/smart_phone" />
     <item
         android:id="@+id/nav_laptop"
         android:icon="@drawable/ic_laptop"

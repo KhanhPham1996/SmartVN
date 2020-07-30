@@ -3,5 +3,6 @@
     <string name="facebook_app_id">2808128892626416</string> <string name="fb_login_protocol_scheme">fb2808128892626416</string>
     <string name="price_format">%+.2f $</string>
     <string name="vnd">VNĐ</string>
+    <string name="smart_phone">Smart Phone</string>
 
 </resources>
